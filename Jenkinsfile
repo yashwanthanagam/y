@@ -1,7 +1,7 @@
 pipeline {
  agent any
  parameters {
-    choice(choices: 'a'\n'b', description: '', name: '')
+    choice(choices: 'a \n b', description: '', name: '')
     booleanParam(name: 'DEBUG', defaultValue: false, description: 'check the box if you want to debug')
   //booleanParam(name: 'DEPLOY', defaultValue: false, description: 'check the box if you want to deploy')
     string(name: 'yash', defaultValue: 'Default ', description: 'Select.')
